@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="1020.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.DeveloperController">
+   <children>
+      <ImageView fitHeight="197.0" fitWidth="201.0" layoutX="83.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/34.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="367.0" layoutY="102.0" prefHeight="34.0" prefWidth="104.0" text="Name   :  " textFill="#56db56">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="311.0" prefHeight="34.0" prefWidth="104.0" text="Mobile  :" textFill="#56db56">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="203.0" prefHeight="34.0" prefWidth="126.0" text="College :" textFill="#56db56">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="413.0" prefHeight="34.0" prefWidth="88.0" text="EMail   :" textFill="#56db56">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="521.0" layoutY="106.0" prefHeight="27.0" prefWidth="236.0" text="Dadasaheb Ankush Sawant" textFill="#f2cccc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="207.0" prefHeight="27.0" prefWidth="236.0" text="Sangola College, Sangola" textFill="#f2cccc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="502.0" layoutY="315.0" prefHeight="27.0" prefWidth="236.0" text="+918308374206" textFill="#f2cccc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="481.0" layoutY="417.0" prefHeight="27.0" prefWidth="236.0" text="sawant97d@gmail.com" textFill="#f2cccc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

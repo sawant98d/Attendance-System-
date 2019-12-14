@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="contentArea" prefHeight="655.0" prefWidth="1020.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="25.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="820.0" text="Welcome to ENTIRE COMPUTER SCIENCE, lab - D7" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="467.0" fitWidth="765.0" layoutX="116.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/lab1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

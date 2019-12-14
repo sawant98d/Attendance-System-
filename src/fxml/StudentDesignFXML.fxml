@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="828.0" prefWidth="1343.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.StudentDesignFXMLController">
+   <children>
+      <Pane layoutX="2.0" layoutY="2.0" prefHeight="109.0" prefWidth="1337.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <Label layoutX="66.0" layoutY="17.0" text="Students" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="91.0" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <GridPane hgap="15.0" layoutX="52.0" layoutY="128.0" prefHeight="103.0" prefWidth="869.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="128.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="311.0" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em;">
+               <children>
+                  <Label alignment="CENTER" layoutX="62.0" layoutY="65.0" text="Total Students" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalStudents" alignment="CENTER" layoutX="72.0" layoutY="20.0" text="40" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="345.0" style="-fx-background-color: #EEAC4C; -fx-background-radius: 1em;" GridPane.columnIndex="1">
+               <children>
+                  <Label layoutX="140.0" layoutY="69.0" prefHeight="19.0" prefWidth="62.0" text="Boys" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalBoys" layoutX="140.0" layoutY="25.0" text="20" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="176.0" style="-fx-background-color: #5CB55B; -fx-background-radius: 1em;" GridPane.columnIndex="2">
+               <children>
+                  <Label layoutX="87.0" layoutY="69.0" text="Girls" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalGirls" layoutX="79.0" layoutY="25.0" text="20" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: #D7534E; -fx-background-radius: 1em;" GridPane.columnIndex="3">
+               <children>
+                  <Label layoutX="65.0" layoutY="67.0" prefHeight="19.0" prefWidth="96.0" text="Lab Number" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labNo" layoutX="81.0" layoutY="14.0" text="D7" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <SplitPane fx:id="SplitPane" dividerPositions="0.6874279123414071" layoutX="42.0" layoutY="305.0" prefHeight="500.0" prefWidth="1268.0" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="305.0">
+        <items>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TableView fx:id="tbData" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="875.0" style="-fx-background-color: #fff;" stylesheets="@../../../SAWANTDA/My%20Projects/Java/NewStudentApp/src/home/css/fullpackstyling.css">
+                     <columns>
+                        <TableColumn fx:id="columnRollNo" prefWidth="98.0" text="Roll No" />
+                        <TableColumn fx:id="columnFirstName" prefWidth="128.0" text="First Name" />
+                        <TableColumn fx:id="columnLastName" prefWidth="115.0" text="Last Name" />
+                        <TableColumn fx:id="columnEMail" prefWidth="131.0" text="E-Mail" />
+                        <TableColumn fx:id="columnContact" prefWidth="106.0" text="Contact" />
+                        <TableColumn fx:id="columnGender" prefWidth="118.0" text="Gender" />
+                        <TableColumn fx:id="columnIPAddress" prefWidth="163.0" text="IP Address" />
+                     </columns>
+                     <columnResizePolicy>
+                       
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </GridPane>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <PieChart fx:id="pieChart" prefHeight="255.0" prefWidth="268.0" style="-fx-background-color: #fff;" stylesheets="@../../../SAWANTDA/My%20Projects/Java/NewStudentApp/src/home/css/fullpackstyling.css" />
+               </children>
+            </GridPane>
+        </items>
+      </SplitPane>
+      <JFXButton fx:id="butttonAddStudent" buttonType="RAISED" layoutX="53.0" layoutY="243.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#signUpAction" prefHeight="46.0" prefWidth="311.0" ripplerFill="#f2eaea" styleClass="loginBtn" stylesheets="@stylesheet1.css" text="ADD STUDENT">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="841.0" prefWidth="1592.0" style="-fx-background-color: #02030A; -fx-border-radius: 10px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.MainDashboardFXMLController">
+   <children>
+      <VBox layoutX="-1.0" layoutY="1.0" prefHeight="841.0" prefWidth="261.0" style="-fx-background-color: #02030A;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Circle fx:id="myCircle" fill="DODGERBLUE" radius="78.0" stroke="BLACK" strokeType="INSIDE">
+               <VBox.margin>
+                  <Insets left="60.0" top="30.0" />
+               </VBox.margin>
+            </Circle>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="122.0" text="Dadaso Sawant">
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#dad6d6" />
+                        <Stop color="#ee7c7c" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="80.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="buttonHome" alignment="BASELINE_LEFT" graphicTextGap="50.0" lineSpacing="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleClicked" prefHeight="85.0" prefWidth="263.0" style="-fx-border-color: :#02030A:#02030A;" styleClass="buttonn" stylesheets="@stylesheet.css" text="Home">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/homeicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="67.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="buttonStudent" alignment="BASELINE_LEFT" graphicTextGap="50.0" layoutX="10.0" layoutY="157.0" lineSpacing="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleClicked" prefHeight="85.0" prefWidth="255.0" style="-fx-border-color: :#02030A:#02030A;" styleClass="buttonn" stylesheets="@stylesheet.css" text="Student">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/studenticon.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="buttonAttendenceOverview" alignment="BASELINE_LEFT" graphicTextGap="50.0" layoutX="10.0" layoutY="197.0" lineSpacing="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleClicked" prefHeight="85.0" prefWidth="254.0" style="-fx-border-color: :#02030A:#02030A;" styleClass="buttonn" stylesheets="@stylesheet.css" text="Overview">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/overviewicon.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Button>
+            <Button fx:id="buttonStudentContact" alignment="BASELINE_LEFT" graphicTextGap="50.0" layoutX="10.0" layoutY="277.0" lineSpacing="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleClicked" prefHeight="85.0" prefWidth="262.0" style="-fx-border-color: :#02030A:#02030A;" styleClass="buttonn" stylesheets="@stylesheet.css" text="Contact">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/chaticon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="buttonSetting" alignment="BASELINE_LEFT" graphicTextGap="50.0" layoutX="10.0" layoutY="317.0" lineSpacing="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleClicked" prefHeight="85.0" prefWidth="255.0" style="-fx-border-color: :#02030A:#02030A;" styleClass="buttonn" stylesheets="@stylesheet.css" text="Setting">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ss.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="buttonLogout" alignment="BASELINE_LEFT" graphicTextGap="50.0" layoutX="10.0" layoutY="237.0" lineSpacing="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleClicked" prefHeight="85.0" prefWidth="255.0" style="-fx-border-color: :#02030A:#02030A;" styleClass="buttonn" stylesheets="@stylesheet.css" text="Logout">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logouticon1.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="contentArea" layoutX="259.0" prefHeight="828.0" prefWidth="1343.0" style="-fx-background-color: #02030A #02030A;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="912.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.MainGUIFXMLController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-8.0" layoutY="-7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="748.0" prefWidth="458.0" style="-fx-background-color: #8000ff;">
+         <children>
+            <ImageView fitHeight="224.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login2.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="27.0" prefWidth="126.0" text="Welcome To" textFill="#f5eded">
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="155.0" text="            S C S" textFill="#f5ebeb">
+               <font>
+                  <Font name="Impact" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Pane fx:id="contentArea" layoutX="450.0" prefHeight="729.0" prefWidth="468.0" style="-fx-background-color: #FFF;">
+         <children>
+            <ImageView fitHeight="142.0" fitWidth="176.0" layoutX="193.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/saw.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="31.0" layoutY="167.0" prefHeight="27.0" prefWidth="155.0" text="Welcome Back" textFill="#2c2121">
+               <font>
+                  <Font name="Impact" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="282.0" layoutY="507.0" prefHeight="27.0" prefWidth="136.0" styleClass="forgetBtn" stylesheets="@stylesheet1.css" text="Forgot Password ?" textFill="#161617">
+               <font>
+                  <Font name="Ebrima Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                         <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Label layoutX="90.0" layoutY="645.0" prefHeight="27.0" prefWidth="85.0" styleClass="forgetBtn" stylesheets="@stylesheetLogin.css" text="New User ?">
+               <font>
+                  <Font name="Ebrima Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Blend>
+                     <topInput>
+                        <Glow>
+                           <input>
+                              <InnerShadow />
+                           </input>
+                        </Glow>
+                     </topInput>
+                  </Blend>
+               </effect>
+               <textFill>
+                  <RadialGradient centerX="0.9222222222222223" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="246.0" layoutY="645.0" onMouseClicked="#openTheRegistrationForm" prefHeight="27.0" prefWidth="136.0" styleClass="forgetBtn" stylesheets="@stylesheet1.css" text="   SignUp" textFill="#6747cd">
+               <font>
+                  <Font name="Ebrima Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Blend>
+                     <topInput>
+                        <Glow>
+                           <input>
+                              <InnerShadow />
+                           </input>
+                        </Glow>
+                     </topInput>
+                  </Blend>
+               </effect>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="554.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openDashboard" prefHeight="50.0" prefWidth="407.0" ripplerFill="#f2eaea" styleClass="loginBtn" stylesheets="@stylesheet1.css" text="Login">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="loginPassword" labelFloat="true" layoutX="31.0" layoutY="424.0" prefHeight="38.0" prefWidth="381.0" promptText="Enter Password " unFocusColor="#6747cd">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="loginID" labelFloat="true" layoutX="30.0" layoutY="346.0" prefHeight="37.0" prefWidth="381.0" promptText="Enter Login ID" unFocusColor="#6747cd">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="37.0" layoutY="250.0" prefHeight="27.0" prefWidth="126.0" text="Sign in to continue" textFill="#171616">
+               <font>
+                  <Font name="Ebrima Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
