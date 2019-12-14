@@ -41,3 +41,5 @@ Java Attendance System
 
 ![](https://github.com/Dadasaheb-Sawant/Attendance-System-/blob/master/screenshot/Screenshot%20(130).png)
 
+#Note : The project is still not completed. It is ongoing project.
+
